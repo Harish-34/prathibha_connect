@@ -1,0 +1,16 @@
+prathibha-connect/
+│
+├── index.html (Homepage)
+├── about.html (About Us)
+├── academics.html (Academics)
+├── admissions.html (Admissions)
+├── extracurricular.html (Extracurricular)
+├── faculty.html (Faculty)
+├── alumni.html (Alumni)
+├── school-management.html (School Management)
+├── contact.html (Contact Us)
+├── css/
+│   └── styles.css (CSS file for styling)
+├── js/
+│   └── script.js (JavaScript for interactive functionality)
+├── images/ (For any images like logo or icons)

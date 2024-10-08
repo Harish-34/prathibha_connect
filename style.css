@@ -1,0 +1,221 @@
+/* styles.css */
+
+/* Basic styles */
+html, body {
+    height: 100%; /* Full height for footer alignment */
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    font-size: 25px; /* Increased font size */
+    background-color: #F2E5BF;
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+}
+
+header {
+    background-color: #257180; /* Dark Blue */
+    color: goldenrod;
+    padding: 10px 20px; /* Add padding for spacing */
+    display: flex; /* Use flexbox for header layout */
+    flex-direction: column; /* Stack header elements vertically */
+}
+
+.header-content {
+    display: flex; /* Use flexbox for logo, website name, and search */
+    justify-content: space-between; /* Space between elements */
+    width: 100%; /* Make header content full width */
+
+}
+
+.logo {
+    height: 150px; /* Adjust logo size */
+    margin-right: 20px; /* Space between logo and website name */
+}
+
+.website-name {
+    font-size: 50px; /* Font size for the website name */
+    margin-top: 30px; /* Remove margin to align with logo */
+    text-align: center; /* Center text horizontally */
+    position: absolute; /* Position it absolutely to center it */
+    left: 50%; /* Move to the center horizontally */
+    transform: translateX(-50%); /* Adjust to truly center */
+}
+
+.search-container {
+    display: flex; /* Flexbox for search input and button */
+    align-items: center; /* Center items vertically */
+    margin-left: auto; /* Push search bar to the right */
+}
+
+.search-container input {
+    padding: 5px;
+    margin-left: 10px; /* Space to the left of the search bar */
+    font-size: 16px; /* Increase font size for search input */
+}
+
+nav {
+    width: 100%; /* Make the nav bar full width */
+    margin-top: 10px; /* Add margin above nav */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox for nav items */
+    justify-content: center; /* Center nav items */
+    margin: 10px 0; /* Add margin above and below the nav */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; /* Increased font size for navigation */
+}
+
+/* Main content styling */
+main {
+    flex: 1; /* Allow main content to grow and push footer down */
+    display: flex;
+    flex-direction: column; /* Ensure vertical stacking */
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Arrange items next to each other */
+    margin: 20px;
+}
+
+.video-container {
+    flex: 2; /* Make the video container larger */
+    margin: 0 10px; /* Add spacing */
+}
+
+.quick-links,
+.event-calendar {
+    flex: 1; /* Make these sections smaller */
+    margin: 0 10px; /* Add spacing */
+}
+
+h1, h2 {
+    color: #003366; /* Use school color */
+    font-size: 24px; /* Increased font size for headings */
+}
+
+/* Footer Links Style */
+.footer-links {
+    display: flex; /* Arrange buttons side by side */
+    justify-content: center; /* Center the buttons */
+    margin-top: 20px;
+}
+
+.footer-links a {
+    margin: 0 15px; /* Spacing between buttons */
+    padding: 10px 20px; /* Increase button size */
+    background-color: #257180; /* Dark Blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Increased font size for footer links */
+}
+
+.footer-links a:hover {
+    background-color: #00509E; /* Lighter blue on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FD8B51; /* Footer Background Color */
+    color: white;
+}
+
+/* events */
+.completed {
+    color: green; /* Change this to your preferred color */
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* academics */
+.academic-calendar, .grades {
+    margin: 20px auto; /* Center section on the page */
+    padding: 15px;
+    background-color: #FFF3E6; /* Light background color for visibility */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 800px; /* Maximum width for sections */
+}
+
+h2 {
+    color: #003366; /* Use school color for headings */
+}
+
+table {
+    width: 100%; /* Full width table but will be constrained by parent width */
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 8px; /* Padding inside cells */
+    text-align: left; /* Left align text */
+}
+
+th {
+    background-color: #257180; /* Dark Blue for header */
+    color: white; /* White text for header */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* faq */
+.faq-container {
+    margin: 20px auto; /* Center the FAQ section */
+    max-width: 800px; /* Limit the width */
+    background-color: #FFF3E6; /* Light background for better visibility */
+    padding: 15px; /* Padding inside the container */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.faq-item {
+    margin-bottom: 15px; /* Space between FAQ items */
+}
+
+.faq-item h2 {
+    color: #257180; /* Use a consistent color for headings */
+    cursor: pointer; /* Optional: Add pointer cursor for interaction */
+}
+
+.faq-item p {
+    margin-top: 5px; /* Space above answers */
+}
+
+/* faculty */
+.faculty-table {
+    width: 80%; /* Adjust width as needed */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse;
+}
+
+.faculty-table th, .faculty-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.faculty-table th {
+    background-color: #705C53;
+}
+
+.faculty-table tr:hover {
+    background-color: #EDDFE0;
+}

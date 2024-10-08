@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Prathibha Connect</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* Custom Styles for the Admissions Form */
+        .admission-form {
+            max-width: 600px; /* Limit the width of the form */
+            margin: 20px auto; /* Center the form */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #007BFF; /* Highlight on focus */
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Rectangle for additional information */
+        .response-box {
+            border: 1px solid #007BFF;
+            border-radius: 4px;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #e9f5ff; /* Light blue background */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="./logo.jpg" alt="Prathibha Blooming High School Logo" class="logo">
+            <div class="website-name">Prathibha Connect</div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button onclick="performSearch()">Search</button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./academics.html">Academics</a></li>
+                <li><a href="./admissions.html">Admissions</a></li>
+                <li><a href="./extracurricular.html">Extracurricular</a></li>
+                <li><a href="./faculty.html">Faculty</a></li>
+                <li><a href="./alumni.html">Alumni</a></li>
+                <li><a href="./management.html">School Management</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>          
+    </header>
+
+    <main>
+        <h1>Admissions at Prathibha Blooming High School</h1>
+        <p>We are excited that you are considering Prathibha Blooming High School for your child’s education. To begin the admission process, please fill out the form below with the necessary details and submit it.</p>
+
+        <div class="admission-form">
+            <div class="form-group">
+                <label for="child-name">Child's Name:</label>
+                <input type="text" id="child-name" name="child-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="parent-name">Parent/Guardian's Name:</label>
+                <input type="text" id="parent-name" name="parent-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="grade">Applying for Grade:</label>
+                <select id="grade" name="grade" required>
+                    <option value="" disabled selected>Select Grade</option>
+                    <option value="6">Grade 6</option>
+                    <option value="7">Grade 7</option>
+                    <option value="8">Grade 8</option>
+                    <option value="9">Grade 9</option>
+                    <option value="10">Grade 10</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Information:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any additional information or requests..."></textarea>
+                <div class="response-box">
+                    This is the additional information response area. You can provide any special requests or further details here.
+                </div>
+            </div>
+
+            <input type="submit" value="Submit">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="./terms.html">Terms of Service</a>
+            <a href="./privacy.html">Privacy Policy</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+
+        <p>&copy; 2024 Prathibha Blooming High School. All Rights Reserved.</p>       
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
